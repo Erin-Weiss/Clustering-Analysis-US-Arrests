@@ -9,7 +9,7 @@
 
 ## Objective
 
-Segment all 50 U.S. states into meaningful groups based on violent crime arrest rates using unsupervised learning. By applying both K-means clustering and hierarchical clustering to the USArrests dataset, this analysis uncovers hidden crime-rate profiles across states — the same type of pattern discovery that businesses use for customer segmentation, market analysis, and risk-tier classification. The project evaluates multiple values of *k*, compares clustering methods, and identifies the optimal segmentation for interpretability and stability.
+Segment all 50 U.S. states into meaningful groups based on violent crime arrest rates using unsupervised learning. By applying both K-means clustering and hierarchical clustering to the USArrests dataset, this analysis uncovers hidden crime-rate profiles across states, the same type of pattern discovery that businesses use for customer segmentation, market analysis, and risk-tier classification. The project evaluates multiple values of *k*, compares clustering methods, and identifies the optimal segmentation for interpretability and stability.
 
 ---
 
@@ -47,9 +47,9 @@ Segment all 50 U.S. states into meaningful groups based on violent crime arrest 
 
 **Key findings:**
 
-- States cluster naturally into distinct crime-rate profiles, with clear separation between low-crime and high-crime groups — directly analogous to how businesses identify distinct customer segments or risk tiers.
+- States cluster naturally into distinct crime-rate profiles, with clear separation between low-crime and high-crime groups, directly analogous to how businesses identify distinct customer segments or risk tiers.
 - **K = 4** provides the strongest balance of interpretability, stability, and explained variation, producing two higher-crime clusters and two lower-crime clusters.
-- **Murder**, **Assault**, and **Rape** rates drive cluster separation more strongly than **UrbanPop**, indicating that urbanization level does *not* consistently correlate with violent crime — contradicting a common assumption.
+- **Murder**, **Assault**, and **Rape** rates drive cluster separation more strongly than **UrbanPop**, indicating that urbanization level does *not* consistently correlate with violent crime, contradicting a common assumption.
 - Without scaling, the Assault variable dominates hierarchical clustering entirely, demonstrating why feature standardization is essential for balanced, reliable segmentation in any domain.
 - Hierarchical clustering on scaled data produces dendrogram structure that confirms and enriches the K-means results, providing nested insight into how states relate at different levels of granularity.
 
